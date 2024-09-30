@@ -23,41 +23,91 @@
 
             <!-- Navbar starts -->
             <header class="header" id="navbar">
+
                 <div class="navbar">
-                    <div class="logo"><img class="logo-img" src="assets/internet.png" alt="logo"></div>
-                    <ul class="links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Service</a></li>
-                        <li><a href="#courses">Courses</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                    <div class="logo"><img class="logo-img" src="assets/edu learn (1).png" alt="logo"></div>
+                    <div>
+                        <ul class="links">
+                            <li><a href="#home">Home</a></li>
+                            <li>
+                                <a href="#services">Service <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="submenus" id="submenu">
+                                    <li><a href="#">Web Development</a></li>
+                                    <li><a href="#">Web Desing</a></li>
+                                    <li><a href="#">Cyber Security</a></li>
+                                    <li><a href="#">App Development</a></li>
+                                    <li><a href="#">Digital Marketting</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#courses">Courses<i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="submenus" id="submenu">
+                                    <li><a href="#">MERN Stack Development</a></li>
+                                    <li><a href="#">Python Full Stack</a></li>
+                                    <li><a href="#">Data Science</a></li>
+                                   
+                                </ul>
+                            </li>
+                            <li><a href="#courses">Placement</a></li>
+                            <li><a href="#courses">Admission</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
                     <div class="toggle-btn">
                         <i class="fa-solid fa-bars"></i>
                     </div>
                 </div>
 
                 <div class="dropdown-menu">
-                    <li><a href="#home">Home</a></li>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
                         <li><a href="#services">Service</a></li>
                         <li><a href="#courses">Courses</a></li>
+                        <li><a href="#courses">Placement</a></li>
+                        <li><a href="#courses">Admission</a></li>
                         <li><a href="#contact">Contact</a></li>
+                    </ul>
+
                 </div>
             </header>
             <!-- Navbar ends -->
 
             <!-- Hero Section starts -->
             <div class="hero" id="home">
-                <div class="content">
-                    <div class="heading">
-                        <h1>Transform <br> your <span style=" color: orangered;">career</span> with future  ready <span style="color: rgb(255, 128, 0);">Skills</span></h1>
-                        <p>Unlock new opportunities by mastering the latest tech trends and innovations.<p>
+                <div class="wrapper ">
+                    <div class="swiper-container mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide">
+                                <img src="assets/Data-Science.jpg" alt="slide 1" class="slide-img">
+                                <div class="slide-content">
+                                    <h1 class="slide-head">Lorem ipsum <br>dolor sit amet</h1>
+                                    <p class="slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, ipsa?</p>
+                                </div>
 
-                        <button class="button">Enroll Now</button>
-                    </div>
-                    <div class="img-box">
-                            <img class="cont-img" src="assets/freepik-export-202409201010009izk.png" alt="">
-                    </div>
+                            </div>
+                            <div class="swiper-slide slide">
+                                <img src="assets/Python.jpg" alt="slide 2" class="slide-img">
+                                <div class="slide-content">
+                                    <h1 class="slide-head">Lorem ipsum <br>dolor sit amet</h1>
+                                    <p class="slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, ipsa?</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide">
+                                <img src="assets/testing.jpeg" alt="slide 3" class="slide-img">
+                                <div class="slide-content">
+                                    <h1 class="slide-head">Lorem ipsum <br>dolor sit amet</h1>
+                                    <p class="slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, ipsa?</p>
+                                </div>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                       
+                        <div class="swiper-pagination"></div>
                     
+                        <div class="swiper-button-next banner"></div>
+                        <div class="swiper-button-prev banner"></div>
+                    </div>
                 </div>
             </div>
             <!-- Hero Section ends -->
@@ -277,6 +327,10 @@
 
         <!-- swiper .js -->
         <script src="swiper.js"></script>
+
+        <!-- banner .js -->
+         <script src="banner.js"></script>
+
     </body>
    
 </html>
